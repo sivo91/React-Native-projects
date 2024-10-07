@@ -29,6 +29,10 @@ export default function HomeScreen() {
         <Text style={styles.centerText}>{text}</Text>
         <Button title={title} onPress={toggleBackgroundColor} />
       </View>
+       {/*  layout */}
+      <View style={{backgroundColor: 'blue', flex: 1}}></View>
+      <View style={{backgroundColor: 'red', flex: 1}}></View>
+      <View style={{backgroundColor: 'pink', flex: 1}}></View>
     </SafeAreaView>
   );
 }
@@ -44,3 +48,15 @@ const styles = StyleSheet.create({
     padding: 20
   },
 });
+
+
+
+/* 
+
+git init
+git add .
+git commit -m "text"
+git remote add origin
+git push -u origin master
+
+*/
