@@ -12,7 +12,8 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
+        headerShown: true,
+        headerTitleAlign: 'center'
       }}>
       <Tabs.Screen
         name="index"
@@ -28,10 +29,23 @@ export default function TabLayout() {
         options={{
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'search' : 'search-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: 'Contact',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'people-circle' : 'people-circle-outline'} color={color} />
           ),
         }}
       />
     </Tabs>
   );
 }
+
+
+// icons 
+// https://icons.expo.fyi/Index/Ionicons/search
