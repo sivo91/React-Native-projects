@@ -33,6 +33,9 @@ export default function HomeScreen() {
         <Link href={'/contact'} style={styles.link}>
           Contact Page
         </Link>
+        <Link href={'/flatList'} style={styles.link}>
+          Flat List
+        </Link>
       </View>
 
       {/* Layout */}
